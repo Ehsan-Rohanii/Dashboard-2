@@ -57,14 +57,14 @@ export default function CreateBrand() {
         onSubmit={handleSubmit}
         className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-10"
       >
-        <h2 className="text-xl font-bold text-gray-800 mb-6">Create Product</h2>
+        <h2 className="text-xl font-bold text-gray-800 mb-6">ساخت محصول</h2>
 
         <div className="grid md:grid-cols-3 gap-4">
           <input
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            placeholder="Title"
+            placeholder="عنوان"
             className="border border-gray-300 rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
 
@@ -72,7 +72,7 @@ export default function CreateBrand() {
             type="number"
             value={price}
             onChange={(e) => setPrice(e.target.value)}
-            placeholder="Price"
+            placeholder="قیمت"
             className="border border-gray-300 rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
 
@@ -88,12 +88,12 @@ export default function CreateBrand() {
           type="submit"
           className="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-xl shadow-md transition duration-200"
         >
-          Confirm
+          تایید
         </button>
       </form>
 
       {/* Products Section */}
-      <h2 className="text-xl font-bold text-gray-800 mb-6">Products</h2>
+      <h2 className="text-xl font-bold text-gray-800 mb-6">محصولات</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">{pro}</div>
     </div>
